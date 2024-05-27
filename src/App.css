@@ -1,0 +1,165 @@
+.status-badge {
+  border-radius: 0;
+  font-weight: 800;
+  width: 90px;
+  text-align: center;
+}
+
+.malicious {
+  background-color: rgba(244, 67, 54, 0.08)!important;
+  color: rgb(244, 67, 54) !important;
+}
+
+.suspicious {
+  background-color: rgb(255, 135, 7, 0.08) !important;
+  color: rgb(255, 135, 7) !important;
+}
+
+.benign {
+  background-color: rgb(76, 175, 80, 0.08)!important;
+  color: rgb(76, 175, 80) !important;
+}
+
+.malicious {
+  background-color: rgba(244, 67, 54, 0.08)!important;
+  color: rgb(244, 67, 54) !important;
+}
+
+.suspicious {
+  background-color: rgb(255, 135, 7, 0.08) !important;
+  color: rgb(255, 135, 7) !important;
+}
+
+.found {
+  background-color: rgb(25, 135, 84, 0.08)!important;
+  color: rgb(25, 135, 84) !important;
+}
+
+.bg-icon {
+  width: 100px !important;
+  height: 20px !important;
+  line-height: 1;
+  font-weight: 700;
+  font-size: 0.75em !important;
+  border-radius: 4px !important;
+}
+
+.bg-report {
+  background-color: rgba(156, 39, 176, 0.08) !important;
+  color: rgb(156, 39, 176) !important;
+  border: 1px solid rgb(156, 39, 176) !important;
+}
+
+.bg-malware {
+  background-color: rgba(255, 152, 0, 0.08) !important;
+  color: rgb(255, 152, 0) !important;
+  border: 1px solid rgb(255, 152, 0) !important;
+}
+
+.bg-vulnerability {
+  background-color: rgba(121, 85, 72, 0.08) !important;
+  color: rgb(121, 85, 72) !important;
+  border: 1px solid rgb(121, 85, 72) !important;
+}
+
+.bg-intrusion-set {
+  background-color: rgba(255, 87, 34, 0.08) !important;
+  color: rgb(255, 87, 34) !important;
+  border: 1px solid rgb(255, 87, 34) !important;
+}
+
+.bg-threat-actor-individual {
+  background-color: rgba(123, 31, 162, 0.08) !important;
+  color: rgb(123, 31, 162) !important;
+  border: 1px solid rgb(123, 31, 162) !important;
+}
+
+.bg-threat-actor-group {
+  background-color: rgba(233, 30, 99, 0.08) !important;
+  color: rgb(233, 30, 99) !important;
+  border: 1px solid rgb(233, 30, 99) !important;
+}
+
+.bg-campaign {
+  background-color: rgba(171, 71, 188, 0.08) !important;
+  color: rgb(171, 71, 188) !important;
+  border: 1px solid rgb(171, 71, 188) !important;
+}
+
+.bg-tool {
+  background-color: rgba(76, 175, 80, 0.08) !important;
+  color: rgb(76, 175, 80) !important;
+  border: 1px solid rgb(76, 175, 80) !important;
+}
+
+.bg-attack-pattern {
+  background-color: rgba(127, 135, 39, 0.08) !important;
+  color: rgb(127, 135, 39) !important;
+  border: 1px solid rgb(127, 135, 39) !important;
+}
+
+.bg-indicator {
+  background-color: rgba(255, 193, 7, 0.08) !important;
+  color: rgb(255, 193, 7) !important;
+  border: 1px solid rgb(255, 193, 7) !important;
+}
+
+.bg-domain-name {
+  background-color: rgba(244, 61, 207, 0.08) !important;
+  color: rgb(244, 61, 207) !important;
+  border: 1px solid rgb(244, 61, 207) !important;
+}
+
+.bg-url {
+  background-color: rgba(79, 77, 1, 0.08) !important;
+  color: rgb(79, 77, 1) !important;
+  border: 1px solid rgb(79, 77, 1) !important;
+}
+
+.bg-stixfile {
+  background-color: rgba(12, 173, 61, 0.08) !important;
+  color: rgb(12, 173, 61) !important;
+  border: 1px solid rgb(12, 173, 61) !important;
+}
+
+.bg-ipv4-addr {
+  background-color: rgba(249, 46, 86, 0.08) !important;
+  color: rgb(249, 46, 86) !important;
+  border: 1px solid rgb(249, 46, 86) !important;
+}
+
+.bg-email-addr {
+  background-color: rgba(194, 163, 147, 0.08) !important;
+  color: rgb(194, 163, 147) !important;
+  border: 1px solid rgb(194, 163, 147) !important;
+}
+
+.bg-artifact {
+  background-color: rgba(242, 105, 156, 0.08) !important;
+  color: rgb(242, 105, 156) !important;
+  border: 1px solid rgb(242, 105, 156) !important;
+}
+
+.bg-hostname {
+  background-color: rgba(83, 192, 251, 0.08) !important;
+  color: rgb(83, 192, 251) !important;
+  border: 1px solid rgb(83, 192, 251) !important;
+}
+
+.bg-city {
+  background-color: rgba(0, 150, 136, 0.08) !important;
+  color: rgb(0, 150, 136) !important;
+  border: 1px solid rgb(0, 150, 136) !important;
+}
+
+.bg-sector {
+  background-color: rgba(33, 150, 243, 0.08) !important;
+  color: rgb(33, 150, 243) !important;
+  border: 1px solid rgb(33, 150, 243) !important;
+}
+
+.bg-country {
+  background-color: rgba(63, 81, 181, 0.08) !important;
+  color: rgb(63, 81, 181) !important;
+  border: 1px solid rgb(63, 81, 181) !important;
+}

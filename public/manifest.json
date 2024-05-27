@@ -1,0 +1,51 @@
+{
+  "name": "OpenCTI Threat Crawler",
+  "description": "Search observables and vulnerabilities in Web content and give context",
+  "version": "1.2.0",
+  "manifest_version": 3,
+  "action": {
+    "default_title": "Click to open panel"
+  },
+  "icons": {
+    "16": "logo16.png",
+    "48": "logo48.png",
+    "128": "logo128.png"
+  },
+  "background": {
+    "service_worker": "./static/js/background.js",
+    "scripts" : ["./static/js/background.js", "./static/js/browser-polyfill.js"]
+  },
+  "side_panel": {
+    "default_path": "index.html",
+    "openPanelOnActionClick": true
+  },
+  "sidebar_action": {
+    "default_icon": {
+      "16": "logo16.png",
+      "32": "logo48.png"
+    },
+    "default_title": "OpenCTI Threat Crawler",
+    "default_panel": "index.html",
+    "open_at_install":false,
+    "browser_style": true
+  },
+  "browser_action": {
+    "browser_style": true,
+    "default_icon": "logo16.png",
+    "default_title": "Feeds"
+  },
+  "permissions": [
+    "activeTab",
+    "storage",
+    "sidePanel",
+    "tabs",
+    "scripting",
+    "contextMenus"],
+  "host_permissions": ["<all_urls>"],
+  "content_scripts": [
+    {
+      "matches": ["http://*/*", "https://*/*"],
+      "js": ["./static/js/content.js", "./static/js/browser-polyfill.js"]
+    }
+  ]
+}
