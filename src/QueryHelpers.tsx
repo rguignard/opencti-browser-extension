@@ -754,6 +754,7 @@ export const createWorkbench = async (workbenchData: any, config: any)=> new Pro
     const headers = new Headers({
         'Authorization': 'Bearer ' + config['opencti_token'],
         'Accept': '*/*',
+        'User-Agent': 'octi-browser-ext',
     });
 
     const formData = new FormData();
@@ -780,6 +781,7 @@ const sendGraphQLRequest = (url: string, token: string, query: any) => new Promi
     const headers = new Headers({
         'Authorization': 'Bearer ' + token,
         'Content-Type': 'application/json',
+        'User-Agent': 'octi-browser-ext',
     });
     const requestOptions = {
         method: 'POST',
