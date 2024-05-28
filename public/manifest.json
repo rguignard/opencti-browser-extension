@@ -16,7 +16,7 @@
   },
   "browser_specific_settings": {
     "gecko": {
-      "id": "firefox-addon@opencti.io"
+      "id": "opencti-firefox@rguignard.io"
     }
   },
   "background": {
