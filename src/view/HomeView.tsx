@@ -70,15 +70,10 @@ function HomeView(props: any) {
         fetchData().then().catch((err) => console.log(err));
 
         browser.tabs.onActivated.addListener(function (activeInfo) {
-            console.log("browser.tabs.onActivated");
-            console.log(activeInfo);
             fetchData().then().catch((err) => console.log(err));
         });
 
         browser.tabs.onUpdated.addListener((tabId, changeInfo, tab) => {
-            console.log("browser.tabs.onUpdated");
-            console.log(changeInfo);
-            console.log(changeInfo.status);
             if (changeInfo.status === 'complete') {
                 fetchData().then().catch((err) => console.log(err));
             }
