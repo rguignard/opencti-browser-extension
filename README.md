@@ -11,6 +11,15 @@
 5. Click "Load unpacked extension..."
 6. Select the directory where you extracted the archive
 
+### Microsoft Edge browser
+
+1. Download latest release: [Download](https://github.com/rguignard/opencti-browser-extension/releases/download/1.2.0/opencti-browser-extension.zip)
+2. Extract zip archive 
+3. Navigate to edge://extensions
+4. On the left menu, check the checkbox for "Developer mode"
+5. Click "Load unpacked"
+6. Select the directory where you extracted the archive
+
 ## Configure the extension
 
 1. Once the extension popup is open, click on the "settings" icon
