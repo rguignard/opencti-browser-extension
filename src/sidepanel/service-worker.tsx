@@ -39,7 +39,7 @@ browser.runtime.onInstalled.addListener(() => {
     setupContextMenu();
 });
 
-// Allows users to open the side panel by clicking on the action toolbar icon
+// Chrome: allows users to open the side panel by clicking on the action toolbar icon
 if (browserType === 'chrome') {
     chrome.sidePanel
         .setPanelBehavior({ openPanelOnActionClick: true })
