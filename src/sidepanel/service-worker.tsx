@@ -40,7 +40,7 @@ browser.runtime.onInstalled.addListener(() => {
 });
 
 // Allows users to open the side panel by clicking on the action toolbar icon
-if (browserType ===' chrome') {
+if (browserType === 'chrome') {
     chrome.sidePanel
         .setPanelBehavior({ openPanelOnActionClick: true })
         .catch((error) => console.error(error));
