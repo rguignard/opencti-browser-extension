@@ -2,9 +2,11 @@
 
 ## Install the extension 
 
+### Chrome browser
+
 1. Download latest release: [Download](https://github.com/rguignard/opencti-browser-extension/releases/download/1.2.0/opencti-browser-extension.zip)
 2. Extract zip archive 
-3. Navigate to chrome://extensions in Chrome
+3. Navigate to chrome://extensions
 4. On the top right, check the checkbox for "Developer mode"
 5. Click "Load unpacked extension..."
 6. Select the directory where you extracted the archive
