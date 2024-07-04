@@ -485,7 +485,7 @@ function convertToStixBundle(workbenchData: any) {
     let observablesTypes;
     for (const item of workbenchData.entities) {
         let itemId = uuidv5(item.value, NAMESPACE);
-        observablesTypes = ["domain", "ipv4", "md5", "sha1", "sha256"]
+        observablesTypes = ["domain", "ipv4", "md5", "sha1", "sha256", "url"]
         if (observablesTypes.includes(item.type)) {
             let stixObservable: any;
             let stixIndicator: any;
@@ -509,6 +509,38 @@ function convertToStixBundle(workbenchData: any) {
                     "pattern": "[domain-name:value = '" + item.value + "']",
                     "name": item.value,
                     "x_opencti_main_observable_type": "Domain-Name",
+                    "x_opencti_type": "Indicator",
+                    "type": "indicator",
+                    "external_references": [externalRef],
+                    "labels": workbenchData.labels
+                }
+                stixRelation = {
+                    "id": "relationship--" + itemId,
+                    "spec_version": "2.1",
+                    "relationship_type": "based-on",
+                    "type": "relationship",
+                    "source_ref": stixIndicator['id'],
+                    "target_ref": stixObservable['id']
+                }
+            }
+            if (item.type === 'url') {
+                stixObservable = {
+                    "id": "url--" + itemId,
+                    "spec_version": "2.1",
+                    "type": "url",
+                    "value": item.value,
+                    "observable_value": item.value,
+                    "external_references": [externalRef],
+                    "labels": workbenchData.labels
+                };
+                stixIndicator = {
+                    "id": "indicator--" + itemId,
+                    "spec_version": "2.1",
+                    "pattern_type": "stix",
+                    "pattern_version": "2.1",
+                    "pattern": "[url:value = '" + item.value + "']",
+                    "name": item.value,
+                    "x_opencti_main_observable_type": "Url",
                     "x_opencti_type": "Indicator",
                     "type": "indicator",
                     "external_references": [externalRef],
