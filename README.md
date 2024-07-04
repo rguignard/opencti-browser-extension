@@ -4,7 +4,7 @@
 
 ### Chrome browser
 
-1. Download latest release: [Download](https://github.com/rguignard/opencti-browser-extension/releases/download/1.3.1/opencti-browser-extension.zip)
+1. Download latest release: [Download](https://github.com/rguignard/opencti-browser-extension/releases/download/1.3.1/opencti-browser-extension-1.3.1.zip)
 2. Extract zip archive 
 3. Navigate to "chrome://extensions"
 4. On the top right, check the checkbox for "Developer mode"
@@ -13,7 +13,7 @@
 
 ### Microsoft Edge browser
 
-1. Download latest release: [Download](https://github.com/rguignard/opencti-browser-extension/releases/download/1.3.1/opencti-browser-extension.zip)
+1. Download latest release: [Download](https://github.com/rguignard/opencti-browser-extension/releases/download/1.3.1/opencti-browser-extension-1.3.1.zip)
 2. Extract zip archive
 3. Navigate to "edge://extensions"
 4. On the left menu, check the checkbox for "Developer mode"
