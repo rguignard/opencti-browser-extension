@@ -22,7 +22,7 @@
 
 ### Mozilla Firefox browser
 
-1. Download latest release for Firefox: [Download](https://github.com/rguignard/opencti-browser-extension/releases/download/1.3.0/opencti-browser-extension-1.3.1.xpi)
+1. Download latest release for Firefox: [Download](https://github.com/rguignard/opencti-browser-extension/releases/download/1.3.1/opencti-browser-extension-1.3.1.xpi)
 2. Navigate to "about:addons"
 3. From the settings cog, open "Install Add-on From File"
 4. Browse to and open the xpi file from the location where it was saved
