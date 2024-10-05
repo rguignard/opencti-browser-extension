@@ -1,10 +1,10 @@
-# OpenCTI Browser Extension 1.3.1
+# OpenCTI Browser Extension 1.3.2
 
 ## Install the extension 
 
 ### Chrome browser
 
-1. Download latest release: [Download](https://github.com/rguignard/opencti-browser-extension/releases/download/1.3.1/opencti-browser-extension-1.3.1.zip)
+1. Download latest release: [Download](https://github.com/rguignard/opencti-browser-extension/releases/download/1.3.2/opencti-browser-extension-1.3.2.zip)
 2. Extract zip archive 
 3. Navigate to "chrome://extensions"
 4. On the top right, check the checkbox for "Developer mode"
@@ -13,7 +13,7 @@
 
 ### Microsoft Edge browser
 
-1. Download latest release: [Download](https://github.com/rguignard/opencti-browser-extension/releases/download/1.3.1/opencti-browser-extension-1.3.1.zip)
+1. Download latest release: [Download](https://github.com/rguignard/opencti-browser-extension/releases/download/1.3.2/opencti-browser-extension-1.3.2.zip)
 2. Extract zip archive
 3. Navigate to "edge://extensions"
 4. On the left menu, check the checkbox for "Developer mode"
@@ -22,7 +22,7 @@
 
 ### Mozilla Firefox browser
 
-1. Download latest release for Firefox: [Download](https://github.com/rguignard/opencti-browser-extension/releases/download/1.3.1/opencti-browser-extension-1.3.1.xpi)
+1. Download latest release for Firefox: [Download](https://github.com/rguignard/opencti-browser-extension/releases/download/1.3.2/opencti-browser-extension-1.3.2.xpi)
 2. Navigate to "about:addons"
 3. From the settings cog, open "Install Add-on From File"
 4. Browse to and open the xpi file from the location where it was saved
