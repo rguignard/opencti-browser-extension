@@ -1468,11 +1468,11 @@ let validTLDs = [
 ]
 
 export const regexExp = {
-    cve: RegExp('(c|C)(v|V)(e|E)-[0-9]*-[0-9]*', 'gim'),
-    md5: RegExp('^\\b[a-f0-9A-F]{32}\\b', 'gim'),
-    sha1: RegExp('^\\b[a-f0-9A-F]{40}\\b', 'gim'),
-    sha256: RegExp('^\\b[a-f0-9A-F]{64}\\b', 'gim'),
-    domain: RegExp('^[a-z0-9]+([\\-\\.]{1}[a-z0-9]+)*(?:\\.|\\[\\.\\]|\\[dot\\]|\\(dot\\))[a-z]{2,6}', 'gim'),
+    cve: RegExp('[cC][vV][eE]-[0-9]*-[0-9]*', 'gim'),
+    md5: RegExp('\\b[a-f0-9A-F]{32}\\b(?!\\.)', 'gim'),
+    sha1: RegExp('\\b[a-f0-9A-F]{40}\\b(?!\\.)', 'gim'),
+    sha256: RegExp('\\b[a-f0-9A-F]{64}\\b(?!\\.)', 'gim'),
+    domain: RegExp('\\b[a-z0-9]+([\\-\\.]{1}[a-z0-9]+)*(?:\\.|\\[\\.\\]|\\[dot\\]|\\(dot\\))[a-z]{2,6}', 'gim'),
     ipv4: RegExp('\\b(?:25[0-5]|2[0-4]\\d|1\\d\\d|[1-9]\\d|\\d)((?:\\.|\\[.\\]|\\(.\\))(?:25[0-5]|2[0-4]\\d|1\\d\\d|[1-9]\\d|\\d)){3}', 'gim'),
     url: RegExp( '(h[tx]{2}ps?(((?::|\\[:])\\/\\/)|(\\[:\\/\\/\\]))[^\\s?)#\'",]+[\\w-])', 'gim')
 };
@@ -1529,6 +1529,7 @@ export function getAllRegexMatches(text: string){
     if (urlMatches) {
         urlMatches.forEach(element => matches.push({'original': element, 'value': refang(element.toLowerCase()), 'type': 'url', 'id': hashCode(element)}));
     }
+    console.log(matches);
     return matches;
 }
 
