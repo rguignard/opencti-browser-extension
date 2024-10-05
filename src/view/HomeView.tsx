@@ -152,7 +152,7 @@ function HomeView(props: any) {
             observable["state"] = "processed";
             observable["status"] = {};
             if (result["data"]["vulnerabilities"]["edges"].length === 0) {
-                observable["status"] = {value: "Not Found", code: "not_found"};
+                observable["status"] = {value: "N/A", code: "not_found"};
             } else {
                 observable['status'] = {value: 'Found', code: 'found'};
                 let vulnerability_id = result['data']['vulnerabilities']['edges'][0]['node']['id'];
@@ -174,7 +174,7 @@ function HomeView(props: any) {
             observable['status'] = {};
 
             if (result['data']['indicators']['edges'].length === 0) {
-                observable['status'] = {value: "Not Found", code: "not_found"};
+                observable['status'] = {value: "N/A", code: "not_found"};
             } else {
                 let indic_score = result['data']['indicators']['edges'][0]['node']['x_opencti_score'];
                 let indic_id = result['data']['indicators']['edges'][0]['node']['id'];
@@ -299,7 +299,7 @@ function HomeView(props: any) {
                     <AccordionSummary>
                         <Stack direction="row" sx={{display: 'flex', width: '100%'}} spacing={2}>
                             <Chip sx={{borderRadius: 0}} label={observable.status.value}
-                                  className={`status-badge ${observable.status.code}`} variant="filled"/>
+                                  className={`status-badge ${observable.status.code}`} variant="filled" size="small"/>
                             <Box sx={{overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap'}}>
                                 <Typography
                                     sx={{
@@ -325,7 +325,7 @@ function HomeView(props: any) {
                         expandIcon={<ExpandMoreIcon/>}>
                         <Stack direction="row" sx={{display: 'flex', width: '100%'}} spacing={2}>
                             <Chip sx={{borderRadius: 0}} label={observable.status.value}
-                                  className={`status-badge ${observable.status.code}`} variant="filled"/>
+                                  className={`status-badge ${observable.status.code}`} variant="filled" size="small"/>
                             <Box sx={{overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap'}}>
                                 <Typography
                                     sx={{

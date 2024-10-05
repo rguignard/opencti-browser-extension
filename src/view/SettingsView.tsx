@@ -107,6 +107,7 @@ function SettingsView(props: any) {
                                 as={TextField}
                                 fullWidth
                                 sx={{mt: 2}}
+                                type="password"
                                 id="token"
                                 name="token"
                                 variant="standard"
